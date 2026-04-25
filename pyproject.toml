@@ -5,15 +5,3 @@ dependencies = [
     "sqlalchemy>=2.0.49",
     "basic",
 ]
-
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.uv.workspace]
-members = [
-    "src/basic",
-]
-
-[tool.uv.sources]
-basic = { workspace = true }
