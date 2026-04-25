@@ -1,0 +1,11 @@
+toml
+[project]
+name = "basic"
+version = "0.1.0"
+dependencies = [
+    "sqlalchemy>=2.0.49",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
