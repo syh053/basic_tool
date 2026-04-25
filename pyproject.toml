@@ -1,0 +1,7 @@
+[project]
+name = "basic-model"
+
+[tool.uv.workspace]
+members = [
+    "src/basic",
+]
