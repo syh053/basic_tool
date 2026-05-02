@@ -1,6 +1,7 @@
 from datetime import datetime
 
-from sqlalchemy import UUID, DateTime, func, text
+
+from sqlalchemy import UUID, DateTime, func, text, String
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
@@ -17,3 +18,6 @@ class TimeMixin(DeclarativeBase):
     edited_at: Mapped[datetime] = mapped_column(
         DateTime, server_default=func.now(),  onupdate=func.now(), comment="edited_at"
     )
+
+class RemarkBase(DeclarativeBase):
+    remark: Mapped[str] = mapped_column(String(255), comment="remark")
