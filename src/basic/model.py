@@ -20,4 +20,4 @@ class TimeMixin(DeclarativeBase):
     )
 
 class RemarkBase(DeclarativeBase):
-    remark: Mapped[str] = mapped_column(String(255), comment="remark")
+    remark: Mapped[str] = mapped_column(String(256), comment="remark")
