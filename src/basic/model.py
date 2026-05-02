@@ -18,3 +18,6 @@ class TimeMixin(DeclarativeBase):
     edited_at: Mapped[datetime] = mapped_column(
         DateTime, server_default=func.now(),  onupdate=func.now(), comment="edited_at"
     )
+
+class RemarkBase(DeclarativeBase):
+    remark: Mapped[str] = mapped_column(String(255), comment="remark")
